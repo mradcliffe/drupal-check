@@ -103,31 +103,35 @@
         },
         {
             "name": "mglaman/phpstan-drupal",
-            "version": "0.11.12",
+            "version": "0.11.13",
             "source": {
                 "type": "git",
                 "url": "https://github.com/mglaman/phpstan-drupal.git",
-                "reference": "684401fcbaee93964685eb3f21fd99edd937d686"
+                "reference": "1d73e1acc717a3cfb6ef355535c7940e8c25ce97"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/mglaman/phpstan-drupal/zipball/684401fcbaee93964685eb3f21fd99edd937d686",
-                "reference": "684401fcbaee93964685eb3f21fd99edd937d686",
+                "url": "https://api.github.com/repos/mglaman/phpstan-drupal/zipball/1d73e1acc717a3cfb6ef355535c7940e8c25ce97",
+                "reference": "1d73e1acc717a3cfb6ef355535c7940e8c25ce97",
                 "shasum": ""
             },
             "require": {
                 "nette/di": "^3.0",
                 "php": "^7.1",
-                "phpstan/phpstan": "^0.11",
+                "phpstan/phpstan": "~0.11.0",
                 "symfony/yaml": "~3.4.5|^4.2",
                 "webflo/drupal-finder": "^1.2"
+            },
+            "conflict": {
+                "phpstan/phpstan": ">=0.12",
+                "phpstan/phpstan-deprecation-rules": ">=0.12"
             },
             "require-dev": {
                 "composer/installers": "^1.6",
                 "drupal/core-recommended": "^8.8@alpha",
                 "drush/drush": "^9.6",
-                "phpstan/phpstan-deprecation-rules": "^0.11.0",
-                "phpstan/phpstan-strict-rules": "^0.11",
+                "phpstan/phpstan-deprecation-rules": "~0.11.0",
+                "phpstan/phpstan-strict-rules": "~0.11.0",
                 "phpunit/phpunit": "^7.5",
                 "squizlabs/php_codesniffer": "^3.3"
             },
@@ -178,7 +182,7 @@
                 }
             ],
             "description": "Drupal extension and rules for PHPStan",
-            "time": "2019-10-28T17:08:58+00:00"
+            "time": "2019-12-09T19:26:22+00:00"
         },
         {
             "name": "mglaman/phpstan-junit",
